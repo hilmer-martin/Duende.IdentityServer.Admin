@@ -125,5 +125,7 @@ namespace Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Dtos.Configuration
         public List<ClientClaimDto> Claims { get; set; }
         public List<ClientSecretDto> ClientSecrets { get; set; }
         public List<ClientPropertyDto> Properties { get; set; }
+
+        public bool CoordinateLifetimeWithUserSession {get; set; }
     }
 }

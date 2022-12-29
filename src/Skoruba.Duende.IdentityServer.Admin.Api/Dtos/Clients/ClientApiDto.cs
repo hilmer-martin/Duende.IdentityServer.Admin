@@ -107,5 +107,7 @@ namespace Skoruba.Duende.IdentityServer.Admin.Api.Dtos.Clients
         public List<string> AllowedIdentityTokenSigningAlgorithms { get; set; }
 
         public bool NonEditable { get; set; }
+
+        public bool CoordinateLifetimeWithUserSession { get; set; }
     }
 }
