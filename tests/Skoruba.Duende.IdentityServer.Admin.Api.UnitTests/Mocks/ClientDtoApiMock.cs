@@ -150,7 +150,8 @@ namespace Skoruba.Duende.IdentityServer.Admin.Api.UnitTests.Mocks
                .RuleFor(o => o.UserCodeType, f => f.Random.Word())
                .RuleFor(o => o.DeviceCodeLifetime, f => f.Random.Int())
                .RuleFor(o => o.RequireRequestObject, f => f.Random.Bool())
-               .RuleFor(o => o.AllowedIdentityTokenSigningAlgorithms, f => AllowedSigningAlgorithms().Take(f.Random.Number(1, 5)).ToList());
+               .RuleFor(o => o.AllowedIdentityTokenSigningAlgorithms, f => AllowedSigningAlgorithms().Take(f.Random.Number(1, 5)).ToList())
+               .RuleFor(o => o.CoordinateLifetimeWithUserSession, f => f.Random.Bool());
 
             return clientFaker;
         }
